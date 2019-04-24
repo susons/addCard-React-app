@@ -1,33 +1,137 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: end;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  flex: 0 0 25%;
+  margin: 10px 15px;
+  box-sizing: border-box;
+  align-self: baseline;
+  color: rgb(13, 2, 104);
+  padding: 10px;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color--blue {
+  background-color: blue;
+}
+
+.color--green {
+  background-color: green;
+}
+
+.color--red {
+  background-color: red;
+}
+
+.color--yellow {
+  background-color: yellow;
+}
+
+.color-picker {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 4px;
+}
+
+.button{
+  background-color: greenyellow;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.select {
+  position: relative;
+}
+
+.select:after {
+  content: '';
+  position: absolute;
+  left: -2.5px;
+  top: -2.5px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.date {
+  font-size: 16px;
+  color: black;
+
+}
+
+.blue:after {
+  border-color: blue;
+}
+
+.green:after {
+  border-color: green;
+}
+
+.red:after {
+  border-color: red;
+}
+
+.yellow:after {
+  border-color: yellow;
+}
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center
+}
+
+.input-title {
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid black;
+  flex: 0 0 60%;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.input-title:focus {
+  border: 2px solid rgb(0, 247, 255);
+  user-select: none;
+}
+
+.container-container {
+  flex: 0 0 60%;
+  box-sizing: border-box;
+}
+
+.input-desc {
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  height: 150px;
+}
+
+.button-container {
+  flex: 0 0 60%;
+  position: relative;
+}
+.button-container p  {
+  flex: 1 1 50%;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.button-container button {
+  height: 25px;
+  flex: 1 1 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
